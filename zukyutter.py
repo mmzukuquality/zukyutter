@@ -16,10 +16,10 @@ Ui_Widget, throwaway = loadUiType('tweet.ui')
 #	connector = MySQLdb.connect(host="192.168.2.1", user="mmzuku", db="Tweet", passwd="ta9ns2uk7um0", charset="utf8")
 
 #except:
-connector = MySQLdb.connect(host="localhost", user="mmzuku", db="Tweet", passwd="ta9ns2uk7um0", charset="utf8")
+connector = MySQLdb.connect(host="localhost", user="", db="Tweet", passwd="", charset="utf8")
 
 
-#connector = MySQLdb.connect(host="localhost", user="mmzuku", passwd="ta9ns2uk7um0", db="Tweet", charset="utf8")
+#connector = MySQLdb.connect(host="localhost", user="", passwd="", db="Tweet", charset="utf8")
 
 csr = connector.cursor()
 
@@ -95,7 +95,7 @@ class Tweet(Ui_Widget, QWidget):
 		#try:
 		#	connects = MySQLdb.connect(host="192.168.2.1", user="mmzuku", passwd="ta9ns2uk7um0", db="Tweet", charset="utf8")
 		#except:
-		connects = MySQLdb.connect(host='localhost', user='mmzuku', passwd='ta9ns2uk7um0', db='Tweet',charset='utf8')
+		connects = MySQLdb.connect(host='localhost', user='', passwd='', db='Tweet',charset='utf8')
 		
 		csr = connects.cursor()
 		csr.execute("SELECT Tweet FROM TimeLine ORDER BY Time DESC LIMIT 11")
@@ -161,7 +161,7 @@ class Tweet(Ui_Widget, QWidget):
 		#try:
 		#	connects = MySQLdb.connect(host="192.168.2.1", user="mmzuku", passwd="ta9ns2uk7um0", db="Tweet", charset="utf8")
 		#except:
-		connects = MySQLdb.connect(host='localhost', user='mmzuku', passwd='ta9ns2uk7um0', db='Tweet',charset='utf8')
+		connects = MySQLdb.connect(host='localhost', user='', passwd='', db='Tweet',charset='utf8')
 		
 		csr = connects.cursor()
 
